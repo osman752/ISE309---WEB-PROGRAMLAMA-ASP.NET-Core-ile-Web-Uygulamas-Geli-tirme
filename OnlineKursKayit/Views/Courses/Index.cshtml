@@ -1,0 +1,19 @@
+﻿@model List<OnlineKursKayit.ViewModels.CourseVM>
+
+<h2>Kurslar</h2>
+
+<a asp-action="Create" class="btn btn-primary">Yeni Kurs</a>
+
+<table class="table mt-3">
+    <tr>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+        </tr>
+    }
+</table>

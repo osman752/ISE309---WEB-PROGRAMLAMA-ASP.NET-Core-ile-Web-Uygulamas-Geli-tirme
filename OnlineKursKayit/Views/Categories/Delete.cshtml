@@ -1,0 +1,17 @@
+﻿@model OnlineKursKayit.Models.Category
+
+@{
+    ViewData["Title"] = "Kategori Sil";
+}
+
+<h2>Kategori Sil</h2>
+
+<div class="alert alert-warning">
+    <strong>@Model.Name</strong> kategorisini silmek istiyor musun?
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Evet, Sil</button>
+    <a class="btn btn-secondary" asp-action="Index">Vazgeç</a>
+</form>

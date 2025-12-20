@@ -1,0 +1,32 @@
+﻿@model List<OnlineKursKayit.Models.Category>
+
+@{
+    ViewData["Title"] = "Kategoriler";
+}
+
+<h2>Kategoriler</h2>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Yeni Kategori</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th style="width:200px;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Name</td>
+                <td>
+                    <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@c.Id">Düzenle</a>
+                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@c.Id">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
