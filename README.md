@@ -1,4 +1,4 @@
-# Çevrimiçi Kurs Kayıt Sistemi (Seçenek 4)
+# Çevrimiçi Kurs Kayıt Sistemi 
 
 ## Gereksinimler
 - .NET 8 SDK
@@ -159,12 +159,8 @@ Uygulama ilk çalıştığında otomatik olarak şu roller oluşturulur:
 
 ---
 
-## 📌 Not
 
-Bu proje, Web Programlama dersi dönem projesi kapsamında geliştirilmiştir ve  
-**ödev değerlendirme kriterlerinin tamamını karşılamaktadır.**
 
----
 
 👨‍💻 **Geliştirici:** Osman Can  
 📅 **Yıl:** 2025
